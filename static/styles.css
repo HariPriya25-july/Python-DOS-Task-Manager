@@ -1,0 +1,144 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background */
+body {
+    min-height: 100vh;
+    
+    background: #8a2a9b;
+    background: linear-gradient(90deg,rgba(138, 42, 155, 1) 0%, rgba(221, 224, 20, 1) 100%, rgba(114, 237, 83, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Card */
+.container {
+    width: 1000px;
+    max-width: 95%;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    backdrop-filter: blur(10px);
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #666;
+}
+
+/* Top Buttons */
+.top-links {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.top-links a {
+    text-decoration: none;
+    padding: 10px 18px;
+    margin: 0 8px;
+    border-radius: 8px;
+    font-weight: 500;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.top-links a:first-child {
+    background: #4e73df;
+}
+
+.top-links a:last-child {
+    background: #e74a3b;
+}
+
+.top-links a:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Table Header */
+th {
+    background: #4e73df;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Table Rows */
+td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+/* Hover effect */
+tr:hover {
+    background-color: #f8f9fc;
+    transition: 0.2s;
+}
+
+/* Status Styling */
+td:nth-child(2) {
+    font-weight: 500;
+}
+
+td:nth-child(2):contains("Completed") {
+    color: green;
+}
+
+/* Action Buttons */
+.actions a {
+    text-decoration: none;
+    padding: 6px 12px;
+    margin: 0 4px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.complete {
+    background: #1cc88a;
+}
+
+.edit {
+    background: #f6c23e;
+    color: black;
+}
+
+.delete {
+    background: #e74a3b;
+}
+
+.actions a:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
